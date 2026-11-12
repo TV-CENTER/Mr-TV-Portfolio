@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body>
+<title>Mr.TV</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Vazirmatn:wght@300;400;500;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+
+<div class="ambient"></div><div class="spot" id="spot"></div>
+
+<div id="pre" role="status">
+  <div>
+    <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 21 20H3z"/><path d="M12 10v4"/></svg>
+    <div class="nm" data-i="name">Mr.TV</div>
+  </div>
+  <div class="meta mono"><span data-i="pre_load">Loading the experience</span><button id="skip" class="mono" data-i="pre_skip">Skip intro</button></div>
+  <div class="bar"></div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3 21 20H3z"/><path d="M12 10v4"/></svg><span data-i="name">Mr.TV</span></a>
+    <nav class="links">
+      <a href="#about" data-i="n_about">About</a><a href="#skills" data-i="n_skills">Skills</a><a href="#work" data-i="n_work">Selected work</a><a href="#method" data-i="n_method">Method</a>
+    </nav>
+    <div class="right">
+      <button class="lang" id="lang" aria-label="Language"><span id="langLbl">فارسی</span></button>
+      <a class="pill" href="#contact"><span data-i="n_touch">Get in touch</span><i>↗</i></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="media" id="media">
+    <div class="stage" id="stage">
+      <!-- Fallback portrait (placeholder) — replaced automatically by hero.mp4 / me.jpg or by the picker -->
+      <svg class="sil" id="sil" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b0d10"/><stop offset="1" stop-color="#050203"/></linearGradient>
+          <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a2a28"/><stop offset="1" stop-color="#1f1011"/></linearGradient>
+          <linearGradient id="rim" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff5b3d" stop-opacity=".0"/><stop offset="1" stop-color="#ff5b3d" stop-opacity=".9"/></linearGradient>
+        </defs>
+        <path d="M-10 410V330Q20 275 100 262L150 300L200 262Q280 275 310 330V410Z" fill="url(#suit)"/>
+        <path d="M100 262L150 392L128 300ZM200 262L150 392L172 300Z" fill="#0c0507" stroke="#ff5b3d" stroke-opacity=".25"/>
+        <path d="M128 252h44v38q-22 22-44 0z" fill="url(#skin)"/>
+        <ellipse cx="150" cy="170" rx="52" ry="68" fill="url(#skin)"/>
+        <path d="M96 160Q92 92 150 88Q212 92 204 160Q196 118 150 116Q104 118 96 160Z" fill="#0b0506"/>
+        <path d="M104 200Q150 262 196 200Q196 236 150 252Q104 236 104 200Z" fill="#150909" opacity=".9"/>
+        <rect x="104" y="158" width="38" height="24" rx="9" fill="#050203" stroke="#ff5b3d" stroke-opacity=".45"/>
+        <rect x="158" y="158" width="38" height="24" rx="9" fill="#050203" stroke="#ff5b3d" stroke-opacity=".45"/>
+        <path d="M142 166h16" stroke="#050203" stroke-width="3"/>
+        <path class="glint" d="M112 162l8 0l-6 16l-8 0z" fill="#fff" opacity="0"/>
+        <path d="M203 130Q214 190 200 240" stroke="url(#rim)" stroke-width="3" fill="none"/>
+        <path d="M280 300Q300 320 310 400" stroke="url(#rim)" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+  </div>
+  <div class="tint"></div>
+
+  <div class="wrap" style="width:100%">
+    <div class="copy">
+      <div>
+        <p class="hey in" style="animation-delay:.2s" data-i="hey">Hey, I'm Mr.TV</p>
+        <h1 class="in" style="animation-delay:.35s"><span data-i="h1a">Bug Bounty</span><span class="l2" data-i="h1b">Hunter &amp; Pentester</span></h1>
+      </div>
+      <aside class="side in" style="animation-delay:.6s">
+        <span class="mono" data-i="intro_k">(01 — Intro)</span>
+        <b data-i="intro_t">I break things carefully so they can be fixed properly.</b>
+        <p data-i="intro_p">Low-level code, web and network security, and reports that developers can act on.</p>
+        <a href="#work" data-i="intro_a">Explore my work ↗</a>
+      </aside>
+    </div>
+    <div class="stats">
+      <div class="card stat in" style="animation-delay:.75s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 21 20H3z"/></svg><div class="n" data-count="19">0</div><div class="t" data-i="s1">Years old, already hunting</div></div>
+      <div class="card stat in" style="animation-delay:.85s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 21 20H3z"/></svg><div class="n" data-count="7">0</div><div class="t" data-i="s2">Languages in my toolbox</div></div>
+      <div class="card stat in" style="animation-delay:.95s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 21 20H3z"/></svg><div class="n" data-count="5">0</div><div class="t" data-i="s3">Security focus areas</div></div>
+      <div class="card stat in" style="animation-delay:1.05s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 21 20H3z"/></svg><div class="n"><span data-count="80">0</span><small>%</small></div><div class="t" data-i="s4">Peak proficiency in core security languages</div></div>
+    </div>
+    <div class="foot mono"><span data-i="foot1">Built with purpose. Tested like a target.</span><span data-i="foot2">Scroll to discover ↓</span></div>
+  </div>
+</div>
+
+<div class="wrap">
+<section id="about">
+  <div class="eyebrow mono rv" data-i="a_k">(02 — About)</div>
+  <h2 class="rv" data-i="a_h">Offensive security, <em>from the metal up.</em></h2>
+  <div class="about">
+    <div class="rv">
+      <p class="lead" data-i="a_p1">Hi, I'm Mr.TV and I'm 19. I work as a bug bounty hunter and penetration tester. I like understanding a system all the way down, from assembly and memory to the web app on top, because that is where the interesting bugs live.</p>
+      <p class="lead" style="margin-top:14px" data-i="a_p2">I work in C++, Assembly, Python, JavaScript, Java (networking), HTML/CSS and Ruby, and I pick the one that fits the target.</p>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="card term rv" aria-label="terminal">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <div><span class="p">$</span> whoami</div><div class="o">mr.tv // bug-bounty, pentest</div>
+      <div><span class="p">$</span> nmap -sV --top-ports 1000 target</div><div class="c"># recon first. always in scope.</div>
+      <div><span class="p">$</span> python3 fuzz.py --endpoint /api/v2</div><div class="o">[+] interesting response found</div>
+      <div><span class="p">$</span> gdb ./binary<span class="caret"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="eyebrow mono rv" data-i="k_k">(03 — Skills)</div>
+  <h2 class="rv" data-i="k_h">Languages &amp; <em>proficiency</em></h2>
+  <p class="lead rv" data-i="k_p">Security-heavy languages sit at 70–80% and above. The rest are above 60%.</p>
+  <div class="skills" id="skillGrid"></div>
+  <div class="legend mono rv"><span style="color:var(--accent)">■ <bdi data-i="lg1">Core security stack</bdi></span><span>■ <bdi data-i="lg2">Supporting stack</bdi></span></div>
+</section>
+
+<section id="work">
+  <div class="eyebrow mono rv" data-i="w_k">(04 — Projects)</div>
+  <h2 class="rv" data-i="w_h">Selected <em>work</em></h2>
+  <p class="lead rv" data-i="w_p">Write-ups, tools and findings. More are on the way.</p>
+  <div class="work" id="workGrid"></div>
+</section>
+
+<section id="method">
+  <div class="eyebrow mono rv" data-i="m_k">(05 — Method)</div>
+  <h2 class="rv" data-i="m_h">How I <em>hunt</em></h2>
+  <div class="steps" id="steps"></div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="contact rv">
+    <div class="eyebrow mono" style="justify-content:center" data-i="c_k">(06 — Contact)</div>
+    <h2 data-i="c_h">Got a target worth testing?</h2>
+    <p class="lead" data-i="c_p">Reach me directly. I reply fastest on Telegram.</p>
+    <div class="cta">
+      <a class="pill" href="https://t.me/Mr_TV_ir" target="_blank" rel="noopener"><span>Telegram @Mr_TV_ir</span><i>↗</i></a>
+      <button class="ghost" id="copyPhone" data-copy="09922486318"><span data-i="phone">Phone</span> <bdi>0992 248 6318</bdi> <span class="ok" id="okMsg"></span></button>
+    </div>
+  </div>
+  <footer class="mono"><span data-i="name">Mr.TV</span><span>© 2026</span></footer>
+</section>
+</div>
+</main>
+
+<script src="script.js"></script>
+
+</body></html>
